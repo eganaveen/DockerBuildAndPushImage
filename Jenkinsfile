@@ -1,7 +1,5 @@
 pipeline{
-	tools{
-		git "git"
-	}
+
 	environment{
 		imagename = "yenigul/hacicenkins"
 		registryCredentials = 'dockerhub'
