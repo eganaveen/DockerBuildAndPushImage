@@ -2,7 +2,7 @@ pipeline{
 
 	environment{
 		imagename = "egadoc/myimage"
-		registryCredentials = "dockerhub"
+		registryCredentials = 'dockerhub'
 		dockerImage = ''
 	}
 	agent any
@@ -22,8 +22,9 @@ pipeline{
 		stage('Deploy Image'){
 			steps{
 				script{
-					docker.withRegistry('', registryCredentials)
-					dockerImage.push()
+					docker.withRegistry('', registryCredentials){
+						dockerImage.push()
+					}
 					
 				}
 			}
