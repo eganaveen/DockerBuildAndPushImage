@@ -1,4 +1,7 @@
 pipeline{
+	tools{
+		git i
+	}
 	environment{
 		imagename = "yenigul/hacicenkins"
 		registryCredentials = 'dockerhub'
@@ -8,7 +11,7 @@ pipeline{
 	stages{
 		stage('Cloning git'){
 			steps{
-				git credentialsId: 'github', url: 'https://github.com/eganaveen/DockerBuildAndPushImage.git'
+				git url: 'https://github.com/eganaveen/DockerBuildAndPushImage.git'
 			}
 		}
 		stage('Building image'){
