@@ -8,7 +8,7 @@ pipeline{
 	stages{
 		stage('Cloning git'){
 			steps{
-				git url: 'https://github.com/eganaveen/DockerBuildAndPushImage.git'
+				git branch: 'main', url: 'https://github.com/eganaveen/DockerBuildAndPushImage.git'
 			}
 		}
 		stage('Building image'){
