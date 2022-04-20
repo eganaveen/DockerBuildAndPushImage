@@ -2,7 +2,7 @@ pipeline{
 
 	environment{
 		imagename = "egadoc/myimage"
-		registryCredentials = 'dockerhub'
+		registryCredentials = "dockerhub"
 		dockerImage = ''
 	}
 	agent any
