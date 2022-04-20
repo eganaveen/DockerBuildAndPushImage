@@ -1,7 +1,7 @@
-pipeline{
+ipipeline{
 
 	environment{
-		imagename = "yenigul/hacicenkins"
+		imagename = "egadoc/myimage"
 		registryCredentials = 'dockerhub'
 		dockerImage = ''
 	}
