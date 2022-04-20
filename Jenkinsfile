@@ -1,6 +1,6 @@
 pipeline{
 	tools{
-		git
+		git "git"
 	}
 	environment{
 		imagename = "yenigul/hacicenkins"
