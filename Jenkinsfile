@@ -1,4 +1,4 @@
-ipipeline{
+pipeline{
 
 	environment{
 		imagename = "egadoc/myimage"
