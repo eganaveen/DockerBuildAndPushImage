@@ -2,7 +2,7 @@ pipeline{
 	environment{
 		imagename = "yenigul/hacicenkins"
 		registryCredentials = 'dockerhub'
-		dockerImage = ""
+		dockerImage = ''
 	}
 	agent any
 	stages{
