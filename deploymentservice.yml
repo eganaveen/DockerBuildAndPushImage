@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: my-alpine-demo-kubernetes
-          image: egadoc/myimage:48
+          image: egadoc/myimage:latest
           ports:
             - containerPort: 80
 
